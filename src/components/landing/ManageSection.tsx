@@ -8,7 +8,7 @@ interface ManageSectionProps {
 export const ManageSection = ({
   show
 }: ManageSectionProps) => {
-  const [activeFeature, setActiveFeature] = useState<number | null>(null);
+  const [activeFeature, setActiveFeature] = useState<number | null>(0);
   const features = [{
     title: "Add Cells",
     description: "Seamlessly import data (CSV, HTML, AI scraping, or clipping) or create new entries effortlessly."

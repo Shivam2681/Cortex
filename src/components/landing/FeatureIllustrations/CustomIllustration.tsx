@@ -68,11 +68,11 @@ export const CustomIllustration: React.FC<CustomIllustrationProps> = ({
       case 0: // Add Cells
         return (
           <div className="relative w-full h-full flex items-center justify-center">
-            <div className="absolute left-10 top-1/3 flex flex-col items-center">
+            <div className="hidden absolute left-10 top-1/3 md:flex flex-col items-center">
               <FileText className="text-primary w-12 h-12 mb-2" />
               <span className="text-xs">Documents</span>
             </div>
-            <div className="absolute left-10 bottom-1/3 flex flex-col items-center">
+            <div className=" absolute left-10 md:left-40 top-1/3 flex flex-col items-center">
               <Database className="text-primary w-12 h-12 mb-2" />
               <span className="text-xs">Data</span>
             </div>
@@ -80,11 +80,11 @@ export const CustomIllustration: React.FC<CustomIllustrationProps> = ({
               <FileUp className="text-primary w-12 h-12 mb-2" />
               <span className="text-xs">Imports</span>
             </div>
-            <ArrowRight className="absolute left-28 top-1/2 transform -translate-y-1/2 text-primary w-8 h-8" />
+            <ArrowRight className="absolute left-24 md:left-28 top-1/2 transform -translate-y-1/2 text-primary w-8 h-8" />
             <div className="neural-node w-20 h-20 flex items-center justify-center">
               <Brain className="text-primary w-10 h-10" />
             </div>
-            <div className="absolute right-24 bottom-10 text-xs bg-primary/10 p-2 rounded">Import data from various sources</div>
+            <div className="absolute right-24 bottom-2 md:bottom-10 text-xs bg-primary/10 p-2 rounded">Import data from various sources</div>
           </div>
         );
       case 1: // Plug & Play
