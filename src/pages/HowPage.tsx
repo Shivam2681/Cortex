@@ -56,7 +56,7 @@ const WorkflowStep = ({
 }) => {
   return (
     <div className="relative">
-      <div className={`absolute top-0 left-0 w-10 h-10 rounded-full bg-${color} text-white flex items-center justify-center font-bold text-lg z-10`}>
+      <div className={`absolute top-0 left-0 w-10 h-10 rounded-full bg-${color} text-blue-600 flex items-center justify-center font-bold text-lg z-10`}>
         {number}
       </div>
       <div className="pl-16">
@@ -187,7 +187,7 @@ const HowPage = () => {
           <div className="relative">
             <div className="absolute left-5 top-6 w-0.5 h-[calc(100%-60px)] bg-gradient-to-b from-primary via-accent to-primary/30"></div>
             
-            <div className="space-y-16 pl-4">
+            <div className="space-y-16 pl-4 ">
               <WorkflowStep 
                 number={1}
                 title="Collect"
@@ -219,7 +219,7 @@ const HowPage = () => {
           <FeatureShowcase
             title="Your knowledge base is visual"
             description="Cortex transforms your notes and saved content into a beautiful, visual interface that makes browsing your digital mind a pleasure."
-            image="/placeholder.svg"
+            image="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80"
             features={[
               { icon: <CheckCircle size={24} />, text: "Visual organization of your knowledge" },
               { icon: <CheckCircle size={24} />, text: "Custom tagging system for personalized categorization" },
@@ -231,7 +231,7 @@ const HowPage = () => {
           <FeatureShowcase
             title="Find anything instantly"
             description="Powerful semantic search understands what you're looking for, not just matching keywords but finding related concepts."
-            image="/placeholder.svg"
+            image="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
             features={[
               { icon: <CheckCircle size={24} />, text: "Neural search that understands concepts, not just keywords" },
               { icon: <CheckCircle size={24} />, text: "Filter by content type, date, source, and custom tags" },
@@ -244,7 +244,7 @@ const HowPage = () => {
           <FeatureShowcase
             title="AI-powered connections"
             description="Discover unexpected connections between ideas with our proprietary neural network that reveals patterns you might miss."
-            image="/placeholder.svg"
+            image="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=800&q=80"
             features={[
               { icon: <CheckCircle size={24} />, text: "Neural connection map visualizes relationships between your ideas" },
               { icon: <CheckCircle size={24} />, text: "Suggestion engine recommends relevant content from your knowledge base" },
@@ -256,7 +256,7 @@ const HowPage = () => {
           <FeatureShowcase
             title="Your private knowledge hub"
             description="Unlike social bookmarking tools, Cortex is completely private. Your data remains yours alone, secured with end-to-end encryption."
-            image="/placeholder.svg"
+            image="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80"
             features={[
               { icon: <CheckCircle size={24} />, text: "End-to-end encryption for all your data" },
               { icon: <CheckCircle size={24} />, text: "No data mining or advertising" },
@@ -269,7 +269,7 @@ const HowPage = () => {
           <FeatureShowcase
             title="An extension for your mind"
             description="Cortex becomes an extension of your thinking process, available across all your devices and integrated with your workflow."
-            image="/placeholder.svg"
+            image="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=800&q=80"
             features={[
               { icon: <CheckCircle size={24} />, text: "Synchronized across all your devices in real-time" },
               { icon: <CheckCircle size={24} />, text: "Browser extensions for Chrome, Firefox, Safari, and Edge" },
@@ -280,7 +280,14 @@ const HowPage = () => {
         </div>
         
         {/* Values Section */}
-        <div className="py-16 px-4 rounded-lg glass-panel my-24">
+        <div className="py-16 px-4 rounded-lg glass-panel my-24 relative overflow-hidden">
+          <div className="absolute inset-0 -z-10">
+            <img 
+              src="https://images.unsplash.com/photo-1556075798-4825dfaaf498?auto=format&fit=crop&w=1920&q=80" 
+              alt="Minimalist workspace"
+              className="w-full h-full object-cover opacity-5"
+            />
+          </div>
           <h2 className="text-3xl font-bold text-center mb-3">We believe software should stay out of the way</h2>
           <p className="text-xl text-center text-foreground/80 max-w-3xl mx-auto mb-16">
             And let you focus on what matters — which isn't software.
@@ -352,7 +359,14 @@ const HowPage = () => {
         </div>
         
         {/* Who is it for section */}
-        <div className="mb-20 glass-panel p-10 rounded-lg">
+        <div className="mb-20 glass-panel p-10 rounded-lg relative overflow-hidden">
+          <div className="absolute inset-0 -z-10">
+            <img 
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1920&q=80" 
+              alt="Team collaboration"
+              className="w-full h-full object-cover opacity-5"
+            />
+          </div>
           <h2 className="text-3xl font-bold text-center mb-12">Made for designers, writers, researchers, developers & visual minds of all kinds</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
@@ -384,7 +398,14 @@ const HowPage = () => {
         </div>
         
         {/* Technical Details */}
-        <div className="mt-20 glass-panel p-8 rounded-lg">
+        <div className="mt-20 glass-panel p-8 rounded-lg relative overflow-hidden">
+          <div className="absolute inset-0 -z-10">
+            <img 
+              src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=1920&q=80" 
+              alt="Neural network visualization"
+              className="w-full h-full object-cover opacity-5"
+            />
+          </div>
           <h2 className="text-3xl font-bold mb-6 text-center text-primary">Technical Details</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
@@ -408,7 +429,7 @@ const HowPage = () => {
               </p>
             </div>
           </div>
-        </div>
+          </div>
       </div>
     </div>
   );
